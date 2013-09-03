@@ -1,0 +1,23 @@
+{
+    "name": "cxbyte/blitz-view",
+    "description": "",
+    "authors": [
+        {
+            "name": "cxbyte",
+            "email": "cxbyte@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Cxbyte\\BlitzView": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
