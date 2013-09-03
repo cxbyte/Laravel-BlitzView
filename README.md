@@ -38,8 +38,7 @@ Updating dependencies (including require-dev)
 Writing lock file
 Generating autoload files
 
-all fine
-then in app config file (/app/config/app.php) add service provider
+all fine, then in app config file (/app/config/app.php) add service provider
 
 
 	'providers' => array(
@@ -47,6 +46,22 @@ then in app config file (/app/config/app.php) add service provider
 		...
 		'Cxbyte\BlitzView\BlitzViewServiceProvider',
 	),
+
+## Using BlitzView ##
+
+You can use views as usually
+
+create view file index.tpl
+
+and in your controller
+
+class HomeController extends BaseController
+{
+    public function HomePage()
+    {
+        return View::make('index', array());
+    }
+}
 
 That's all :-)
 
