@@ -57,7 +57,9 @@ and in your controller
 
 class HomeController extends BaseController
 {
+
     public function HomePage()
+    
     {
         return View::make('index', array());
     }
